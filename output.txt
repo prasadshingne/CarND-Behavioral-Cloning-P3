@@ -1,0 +1,74 @@
+Using TensorFlow backend.
+/opt/carnd_p3/behavioral/lib/python3.5/site-packages/matplotlib/font_manager.py:280: UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment.  'Matplotlib is building the font cache using fc-list. '
+Train on 51724 samples, validate on 12932 samplesEpoch 1/3
+2018-08-23 16:16:48.782394: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-23 16:16:48.807577: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-23 16:16:48.807603: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-23 16:16:49.435817: E tensorflow/core/common_runtime/direct_session.cc:171] Internal: failed initializing StreamExecutor for CUDA device ordinal 0: Internal: failed call to cuDevicePrimaryCtxRetain: CUDA_ERROR_OUT_OF_MEMORY; total memory reported: 11996954624
+Traceback (most recent call last):
+  File "model401.py", line 96, in <module>
+    history_object = model.fit(X_train, y_train, validation_split = 0.2, shuffle=True, verbose=1, epochs=3)
+  File "/opt/carnd_p3/behavioral/lib/python3.5/site-packages/keras/models.py", line 867, in fit
+    initial_epoch=initial_epoch)
+  File "/opt/carnd_p3/behavioral/lib/python3.5/site-packages/keras/engine/training.py", line 1598, in fit
+    validation_steps=validation_steps)
+  File "/opt/carnd_p3/behavioral/lib/python3.5/site-packages/keras/engine/training.py", line 1183, in _fit_loop
+    outs = f(ins_batch)
+  File "/opt/carnd_p3/behavioral/lib/python3.5/site-packages/keras/backend/tensorflow_backend.py", line 2270, in __call__
+    session = get_session()
+(/opt/carnd_p3/behavioral) root@8553e085a8a5:/home/workspace/CarND-Behavioral-Cloning-P3# python model401.py
+Using TensorFlow backend.
+Train on 51724 samples, validate on 12932 samples
+Epoch 1/3
+2018-08-23 16:20:24.336134: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructio
+ns, but these are available on your machine and could speed up CPU computations.
+2018-08-23 16:20:24.358410: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructio
+ns, but these are available on your machine and could speed up CPU computations.
+2018-08-23 16:20:24.358444: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2018-08-23 16:20:25.241647: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:893] successful NUMA node read from SysFS had negative value
+ (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-08-23 16:20:25.262222: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties:
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 0000:00:04.0
+Total memory: 11.17GiB
+Free memory: 11.09GiB
+2018-08-23 16:20:25.262357: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0
+2018-08-23 16:20:25.262393: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y
+2018-08-23 16:20:25.266680: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 0000:00:04.0)
+51724/51724 [==============================] - 87s - loss: 0.0183 - val_loss: 0.0236
+Epoch 2/3
+51724/51724 [==============================] - 64s - loss: 0.0155 - val_loss: 0.0226
+Epoch 3/3
+51724/51724 [==============================] - 64s - loss: 0.0138 - val_loss: 0.0199
+dict_keys(['val_loss', 'loss'])
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+lambda_1 (Lambda)            (None, 160, 320, 3)       0
+_________________________________________________________________
+cropping2d_1 (Cropping2D)    (None, 65, 320, 3)        0
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 31, 158, 24)       1824
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 14, 77, 36)        21636
+_________________________________________________________________
+conv2d_3 (Conv2D)            (None, 5, 37, 48)         43248
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 3, 35, 64)         27712
+_________________________________________________________________
+conv2d_5 (Conv2D)            (None, 1, 33, 64)         36928
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 2112)              0
+_________________________________________________________________
+dense_1 (Dense)              (None, 100)               211300
+_________________________________________________________________
+dense_2 (Dense)              (None, 50)                5050
+_________________________________________________________________
+dense_3 (Dense)              (None, 10)                510
+_________________________________________________________________
+dense_4 (Dense)              (None, 1)                 11
+=================================================================
+Total params: 348,219
+Trainable params: 348,219
+Non-trainable params: 0
