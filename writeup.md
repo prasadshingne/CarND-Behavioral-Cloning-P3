@@ -10,12 +10,12 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./pictures/left_2016_12_01_13_31_15_513.png "Left"
-[image2]: ./pictures/center_2016_12_01_13_31_15_513.png "Center"
-[image3]: ./pictures/right_2016_12_01_13_31_15_513.png "Right"
-[image4]: ./pictures/center_2018_08_13_05_56_33_832.png "Recovery Image1"
-[image5]: ./pictures/center_2018_08_13_05_56_34_421.png "Recovery Image2"
-[image5]: ./pictures/center_2018_08_13_05_56_35_146.png "Recovery Image3"
+[image1]: ./pictures/left_2016_12_01_13_31_15_513.jpg "Left"
+[image2]: ./pictures/center_2016_12_01_13_31_15_513.jpg "Center"
+[image3]: ./pictures/right_2016_12_01_13_31_15_513.jpg "Right"
+[image4]: ./pictures/center_2018_08_13_05_56_33_832.jpg "Recovery Image1"
+[image5]: ./pictures/center_2018_08_13_05_56_34_421.jpg "Recovery Image2"
+[image5]: ./pictures/center_2018_08_13_05_56_35_146.jpg "Recovery Image3"
 [image7]: ./pictures/fit_history401.png "Fit History"
 
 ## Rubric Points
