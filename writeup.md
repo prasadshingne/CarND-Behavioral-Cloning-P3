@@ -146,10 +146,10 @@ I used 80% of the sample data for training (51724) the model. The training was d
 
 ![alt text][image7]
 
-After this training the car was able to drive around track one while being on the road all the time.
+After this training the car was able to drive around track one ([video] (https://github.com/prasadshingne/CarND-Behavioral-Cloning-P3/blob/master/videos/track1.mp4)) while being on the road all the time.
 
 
 #### Note about track two
 
-I did not take any trainig data on track two in the interest of time. However I was curious how the model that had been trained only on track one would perform on track two. To my surprise the car went further than I had expected, 
+I did not take any trainig data on track two in the interest of time. However I was curious how the model that had been trained only on track one would perform on track two. To my surprise the car went further than I had expected ([video] (https://github.com/prasadshingne/CarND-Behavioral-Cloning-P3/blob/master/videos/track2_test.mp4)), 
 showing that even the current small model is fairly robust. 
