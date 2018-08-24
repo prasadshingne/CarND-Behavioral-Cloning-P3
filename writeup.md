@@ -30,7 +30,7 @@ My project includes the following files:
 * model401.py containing the script to create and train the model
 * drive.py for driving the car in autonomous mode (This is provided by Udacity and I did not modify it)
 * model401.h5 containing a trained convolution neural network 
-* writeup.md or writeup_report.pdf summarizing the results
+* writeup.md summarizing the results
 * video.mp4 video containig the simulator in autonomous mode using my model401.h5
 
 #### 2. Submission includes functional code
