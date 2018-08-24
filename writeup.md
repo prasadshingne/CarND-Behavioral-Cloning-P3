@@ -15,7 +15,7 @@ The goals / steps of this project are the following:
 [image3]: ./pictures/right_2016_12_01_13_31_15_513.jpg "Right"
 [image4]: ./pictures/center_2018_08_13_05_56_33_832.jpg "Recovery Image1"
 [image5]: ./pictures/center_2018_08_13_05_56_34_421.jpg "Recovery Image2"
-[image5]: ./pictures/center_2018_08_13_05_56_35_146.jpg "Recovery Image3"
+[image6]: ./pictures/center_2018_08_13_05_56_35_146.jpg "Recovery Image3"
 [image7]: ./pictures/fit_history401.png "Fit History"
 
 ## Rubric Points
